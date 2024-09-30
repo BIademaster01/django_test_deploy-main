@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "test_deploy/wsgi.py",
+      "src": "django_test_deploy.py/wsgi.py",
       "use": "@vercel/python"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "test_deploy/wsgi.py"
+      "dest": "django_test_deploy.py/wsgi.py"
     }
   ]
 }

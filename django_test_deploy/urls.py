@@ -17,10 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path ,include
 
-from django.shortcuts import render
+# from django.shortcuts import render
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lambda req : render(req, 'index.html')),
+    # path('', lambda req : render(req, 'index.html')),
     path('api/', include('TokenizerB.urls')),
 ]
